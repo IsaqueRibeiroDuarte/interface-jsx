@@ -1,0 +1,30 @@
+// Fonte Poppins - Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Fonte Raleway - Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$white: #FFFFFF; // Cor da Fonte Primária
+$black: #000000; // COr da Fonte Secundária
+$bg-body: #2d2d2d; // Cor do Background do Body
+$bg-input-window-color: #d3d3d3; //Cor do Background do input da Janela de Edição e Exclusão de Tarefas
+$bg-window-color: #FFFFFF; // Cor do Background da Janela de Edição e Exclusão de Tarefas 
+$bt-color:#0c70f2; // Cor do Botão
+$bt-negative-color: #f44336; // Cor do Botão (Não)
+$bt-positive-color: #4caf50; // Cor do Botão (Sim)
+$bx-shadow-button: 2px 2px 6px #000000; // Box Shadow dos Botões
+$mn-bg-color: #0c70f2; // Hover - Cor do Background do Menu
+$mn-bg-hover: #FFFFFF; // Hover - Cor do Background do Menu 
+$mn-color-hover: #0c70f2; // Hover - Cor da Fonte do Menu
+$mn-bx-shadow: 0px 0px 6px #2d2d2d; // Box Shadow do Menu
+$bd-border-radius: 10px; // Border Radius
+$font-fam-primary: 'Poppins', sans-serif; // Fonte Primária
+$font-fam-secondary: 'Raleway', sans-serif; // Fonte Secundária
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}

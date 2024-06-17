@@ -1,0 +1,214 @@
+@use "../Global.scss" as *;
+
+* {
+  font-family: $font-fam-secondary;
+}
+
+body {
+  font-weight: 600;
+  background-color: $bg-body;
+  color: $white;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  font-size: 48px;
+  margin-bottom: 100px;
+  margin-right: 12%;
+  white-space: nowrap;
+  font-family: $font-fam-primary;
+}
+.menu {
+  background-color: $mn-bg-color;
+  color: $white;
+  padding: 15px 25px 0px 25px;
+  font-size: 25px;
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+  
+  li {
+    font-family: $font-fam-primary;
+    padding: 10px 10px 15px 10px;
+    border-radius: 10px 10px 0 0;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  li.organization {
+
+    &:hover {
+      box-shadow: 0px 0px 8px #000000;
+      background-color: $mn-bg-hover;
+      color: $mn-color-hover;
+    }
+  
+  }
+  
+  li.tasks {
+    background-color: $white;
+    color: #0c70f2;
+    box-shadow: 0px 0px 8px #000000;
+  }
+}
+
+.task-input {
+  background-color: #2d2d2d;
+  color: $white;
+  border: none;
+  font-size: 25px;
+  // margin-left: 3%;
+}
+
+.task-input::placeholder {
+  color: $white;
+}
+
+
+.task-table {
+  margin-left: 8%;
+  table {
+    width: 80%;
+    font-size: 30px;
+
+    th {
+      padding-bottom: 25px;
+      text-align: center;
+    }
+    .separator {
+      height: 6px;
+      background-color: $white;
+      width: 80%;
+      margin-left: 18%;
+    }
+
+    td {
+      padding: 10px;
+      text-align: center;
+      font-weight: 400;
+      font-size: 25px;
+    }
+
+    .task-name {
+      text-align: left;
+      padding-left: 20%;
+    }
+    hr {
+      width: 1000px;
+      margin-bottom: 3rem;
+      height: 6px;
+      background-color: $white;
+    }
+  }
+}
+
+.add {
+  font-size: 35px;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: #0c70f2;
+    transform: scale(1.1);
+  }
+}
+
+.check {
+  width: 23px;
+  height: 23px;
+}
+
+.icon1 {
+  &:hover {
+    color: #4caf50;
+    transform: scale(1.2);
+  }
+}
+
+.icon2 {
+  &:hover {
+    color: #f44336;
+    transform: scale(1.2);
+  }
+}
+
+.modal-active .task-table {
+  display: none; // Esconde a tabela de tarefas quando o modal está ativo.
+}
+
+.modal-overlay {
+  position: fixed; // Posição fixa para a sobreposição do modal.
+  top: 0;
+  left: 0;
+  width: 100%; // Largura total da sobreposição.
+  height: 100%; // Altura total da sobreposição.
+  background: rgba(0, 0, 0, 0.5); // Fundo semitransparente.
+  display: flex; // Flexbox para centralizar o modal.
+  justify-content: center; // Centraliza horizontalmente.
+  align-items: center; // Centraliza verticalmente.
+}
+
+.modal {
+  background: white; // Fundo branco para o modal.
+  padding: 50px 30px; // Espaçamento interno do modal.
+  border-radius: 10px; // Bordas arredondadas do modal.
+  text-align: center; // Texto centralizado no modal.
+  width: 500px; /* Aumentando a largura da janela modal */
+  height: 300px;
+  
+}
+
+.modal-buttons {
+  margin-top: 10%; // Margem superior para os botões do modal.
+  button {
+    margin: 0 10px; // Margem horizontal para os botões.
+    padding: 10px 55px; // Espaçamento interno dos botões.
+    cursor: pointer; // Cursor como ponteiro ao passar sobre os botões.
+  }
+}
+
+.btn1 {
+  background-color: #0c70f2;
+  color: $white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: $font-fam-secondary;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5rem;
+
+  &:hover {
+    background-color: #4caf50;
+    box-shadow: 2px 2px 8px #000000;
+  }
+}
+
+.btn2 {
+  background-color: #0c70f2;
+  color: $white;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: $font-fam-secondary;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5rem;
+
+  &:hover {
+    background-color: #f44336;
+    box-shadow: 2px 2px 8px #000000;
+  }
+}
+
+h2 {
+    font-size: 35px;
+    margin-bottom: 2.5rem;
+}
+
+h3 {
+    font-size: 25px;
+}
